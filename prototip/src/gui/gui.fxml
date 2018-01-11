@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="584.0" prefWidth="732.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="584.0" prefWidth="732.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Porudžbine">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="631.0" prefWidth="597.0">
+                     <children>
+                        <TableView layoutX="6.0" layoutY="8.0" prefHeight="268.0" prefWidth="336.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="366.0" layoutY="14.0" mnemonicParsing="false" text="Dodaj porudžbinu" />
+                        <Button layoutX="366.0" layoutY="63.0" mnemonicParsing="false" text="Izbriši porudžbinu" />
+                        <RadioButton layoutX="372.0" layoutY="185.0" mnemonicParsing="false" selected="true" text="Sve porudžbine">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="gr" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton layoutX="372.0" layoutY="211.0" mnemonicParsing="false" text="Moguće realizacije" toggleGroup="$gr" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Računovodstvo">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="-6.0" prefHeight="323.0" prefWidth="508.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Dospeli računi">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="469.0">
+                                       <children>
+                                          <TableView layoutX="8.0" layoutY="11.0" prefHeight="256.0" prefWidth="310.0">
+                                            <columns>
+                                              <TableColumn prefWidth="75.0" text="C1" />
+                                              <TableColumn prefWidth="75.0" text="C2" />
+                                            </columns>
+                                          </TableView>
+                                          <Button layoutX="325.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" text="Dodaj račun" />
+                                          <Button layoutX="325.0" layoutY="58.0" mnemonicParsing="false" text="Arhiviraj među plaćene" />
+                                          <RadioButton layoutX="348.0" layoutY="193.0" mnemonicParsing="false" selected="true" text="Neplaćeni">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="gr1" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton layoutX="348.0" layoutY="221.0" mnemonicParsing="false" text="Plaćeni" toggleGroup="$gr1" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Izdati računi">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView layoutX="7.0" layoutY="6.0" prefHeight="261.0" prefWidth="327.0">
+                                             <columns>
+                                                <TableColumn prefWidth="75.0" text="C1" />
+                                                <TableColumn prefWidth="75.0" text="C2" />
+                                             </columns>
+                                          </TableView>
+                                          <Button layoutX="340.0" layoutY="14.0" mnemonicParsing="false" text="Arhiviraj među plaćene" />
+                                          <RadioButton layoutX="360.0" layoutY="160.0" mnemonicParsing="false" selected="true" text="Neplaćeni">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="gr2" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton layoutX="360.0" layoutY="190.0" mnemonicParsing="false" text="Plaćeni" toggleGroup="$gr2" />
+                                          <Button layoutX="341.0" layoutY="52.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Ažuriraj rok za plaćanje" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="Statistika poslovanja">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Magacin">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="546.0" prefWidth="730.0">
+                     <children>
+                        <TabPane layoutX="-1.0" layoutY="-4.0" prefHeight="392.0" prefWidth="603.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Sirovine">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="551.0">
+                                       <children>
+                                          <TableView layoutY="2.0" prefHeight="295.0" prefWidth="348.0">
+                                            <columns>
+                                              <TableColumn prefWidth="75.0" text="C1" />
+                                              <TableColumn prefWidth="75.0" text="C2" />
+                                            </columns>
+                                          </TableView>
+                                          <Button layoutX="375.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Dodaj sirovinu" />
+                                          <Button layoutX="375.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Ažuriraj" />
+                                          <Button layoutX="375.0" layoutY="117.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Izbriši sirovinu" />
+                                       </children></AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Proizvodi">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView layoutY="3.0" prefHeight="297.0" prefWidth="346.0">
+                                             <columns>
+                                                <TableColumn prefWidth="75.0" text="C1" />
+                                                <TableColumn prefWidth="75.0" text="C2" />
+                                             </columns>
+                                          </TableView>
+                                          <Button layoutX="369.0" layoutY="23.0" mnemonicParsing="false" text="Dodaj proizvod" />
+                                          <Button layoutX="369.0" layoutY="63.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" text="Ažuriraj" />
+                                          <Button layoutX="370.0" layoutY="102.0" mnemonicParsing="false" text="Izbriši proizvod" />
+                                       </children></AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="Popis">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="318.0" prefWidth="507.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="14.0" text="Popisano stanje sirovina" />
+                                          <TableView layoutX="7.0" layoutY="31.0" prefHeight="128.0" prefWidth="267.0">
+                                            <columns>
+                                              <TableColumn prefWidth="75.0" text="C1" />
+                                              <TableColumn prefWidth="75.0" text="C2" />
+                                            </columns>
+                                          </TableView>
+                                          <TableView layoutX="9.0" layoutY="195.0" prefHeight="156.0" prefWidth="267.0">
+                                             <columns>
+                                                <TableColumn prefWidth="75.0" text="C1" />
+                                                <TableColumn prefWidth="75.0" text="C2" />
+                                             </columns>
+                                          </TableView>
+                                          <Label layoutX="8.0" layoutY="173.0" text="Popisano stanje proizvoda" />
+                                          <Button layoutX="289.0" layoutY="31.0" mnemonicParsing="false" text="Izaberi sirovinu" />
+                                          <Button layoutX="287.0" layoutY="195.0" mnemonicParsing="false" text="Izaberi proizvod" />
+                                          <Button layoutX="429.0" layoutY="273.0" mnemonicParsing="false" text="Uporedi sa stanjem u bazi" />
+                                          <Button layoutX="430.0" layoutY="311.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="152.0" text="Štampaj izveštaj" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Proizvodnja">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Zaposleni">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Klijenti">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

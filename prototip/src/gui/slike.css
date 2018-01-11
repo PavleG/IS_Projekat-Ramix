@@ -1,0 +1,28 @@
+.btn_magacin_bg{
+	-fx-background-image:url('/gui/slike/magacin.png');
+}
+
+.btn_resursi_bg{
+	-fx-background-image:url('/gui/slike/resursi.png');
+}
+
+.btn_proizvodnja_bg{
+	-fx-background-image:url('/gui/slike/proizvodnja.png');
+}
+
+.btn_nabavka_bg{
+	-fx-background-image:url('/gui/slike/nabavka.png');
+}
+
+.btn_prodaja_bg{
+	-fx-background-image:url('/gui/slike/prodaja.png');
+}
+
+.btn_racunovodstvo_bg{
+	-fx-background-image:url('/gui/slike/racunovodstvo.png');
+}
+
+.btn_message_bg{
+	-fx-background-image:url('/gui/slike/message.png');
+}
+

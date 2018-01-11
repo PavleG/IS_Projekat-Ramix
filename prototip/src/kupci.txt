@@ -1,0 +1,8 @@
+002,Kupac1,1. oktobra 17 Cacak
+008,Kupac2,1300 kaplara 151 Cacak
+011,Kupac3,1300 Kaplara 23 Cacak
+013,Kupac4,Beogradska 115 Cacak
+015,Kupac5,Kneza Milosa 50 Cacak
+023,Kupac6,Pionirska 53 Kraljevo
+025,Kupac7,Cara Lazara 78 Kraljevo
+027,Kupac8,Vojvode Misica  45 Gornji Milanovac

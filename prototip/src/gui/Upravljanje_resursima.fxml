@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+  <tabs>
+    <Tab text="Zaposleni">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <TableView prefHeight="451.0" prefWidth="562.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="JMBG" />
+                      <TableColumn prefWidth="75.0" text="Ime" />
+                        <TableColumn prefWidth="75.0" text="Prezime" />
+                        <TableColumn prefWidth="75.0" text="Telefon" />
+                        <TableColumn prefWidth="75.0" text="Adresa" />
+                        <TableColumn prefWidth="102.0" text="Početak rada" />
+                        <TableColumn prefWidth="84.0" text="Plata" />
+                    </columns>
+                  </TableView>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="btn_novi_zaposleni" mnemonicParsing="false" onAction="#openNoviZaposleni" prefHeight="25.0" prefWidth="65.0" text="Kreiraj" />
+                        <Button disable="true" mnemonicParsing="false" text="Pregledaj" />
+                        <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" text="Izmeni" />
+                        <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Izbriši" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </content>
+    </Tab>
+    <Tab text="Vozila">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <TableView prefHeight="451.0" prefWidth="562.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="Reg. oznaka" />
+                        <TableColumn prefWidth="75.0" text="Tip" />
+                        <TableColumn prefWidth="106.0" text="God. proizvodnje" />
+                        <TableColumn prefWidth="151.0" text="Datum sled. registracije" />
+                        <TableColumn prefWidth="147.0" text="Dat. sled. tehn. pregl." />
+                     </columns>
+                  </TableView>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="btn_novo_vozilo" mnemonicParsing="false" onAction="#openNovoVozilo" prefHeight="25.0" prefWidth="65.0" text="Kreiraj" />
+                        <Button disable="true" mnemonicParsing="false" text="Pregledaj" />
+                        <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" text="Izmeni" />
+                        <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Izbriši" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+    </Tab>
+  </tabs>
+</TabPane>

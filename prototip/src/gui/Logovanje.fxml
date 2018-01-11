@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="572.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+   <children>
+      <VBox alignment="CENTER" prefHeight="176.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <Label text="Dobro došli!">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="117.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../user_image.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="600.0">
+         <children>
+            <Label text="Korisničko ime" />
+            <TextField fx:id="tf_korIme" maxWidth="200.0" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets left="200.0" right="200.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="600.0">
+         <children>
+            <Label text="Lozinka" />
+            <TextField maxWidth="200.0" />
+         </children>
+         <VBox.margin>
+            <Insets left="200.0" right="200.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button fx:id="btn_prijaviSe" defaultButton="true" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#prijava" text="Prijavi se" />
+            <Button cancelButton="true" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" text="Otkaži" />
+         </children>
+      </HBox>
+      <HBox prefHeight="56.0" prefWidth="565.0">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../ramix_slika.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" top="20.0" />
+   </padding>
+</VBox>

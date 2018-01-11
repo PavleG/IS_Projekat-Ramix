@@ -1,0 +1,9 @@
+005,MIXACRIL podloga,50,100
+006,MIXACRIL KONCENTRAT podloga,40,500
+009,BOJAPOL EKONOMIK poludisperziona boja za enterijer,70,200
+015,MIXPOL poludisperziona boja viseg kvaliteta za enterijer,100,1000
+016,BOJADIS disperziona boja za enterijer,200,500
+023,BOJAFAS disperziona fasadna boja za exterijer,80,300
+025,MIXTON vec pripremljena disperziona boja u raznim nijansama,10,2000
+026,MIXCOL D2 disperzioni univerzalni lepak za tvrdo drvo,50,900
+030,TAPET FIX visoko kvalitetni lepak za tapete,90,1300

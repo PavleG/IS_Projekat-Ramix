@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="btn_prodaja" minHeight="150.0" minWidth="150.0" mnemonicParsing="false" onAction="#openProdaja" styleClass="btn_prodaja_bg" stylesheets="@slike.css" />
+            <Label text="Prodaja">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+         <children>
+            <Button fx:id="btn_nabavka" minHeight="150.0" minWidth="150.0" mnemonicParsing="false" onAction="#openNabavka" styleClass="btn_nabavka_bg" stylesheets="@slike.css" />
+            <Label text="Nabavka">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+         <children>
+            <Button minHeight="150.0" minWidth="150.0" mnemonicParsing="false" onAction="#openProizvodnja" styleClass="btn_proizvodnja_bg" stylesheets="@slike.css" />
+            <Label text="Proizvodnja">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="btn_resursi" minHeight="150.0" minWidth="150.0" mnemonicParsing="false" onAction="#openResursi" styleClass="btn_resursi_bg" stylesheets="@slike.css" />
+            <Label text="Resursi">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="btn_racunovodstvo" minHeight="150.0" minWidth="150.0" mnemonicParsing="false" onAction="#openRacunovodstvo" styleClass="btn_racunovodstvo_bg" stylesheets="@slike.css" />
+            <Label text="Računovodstvo">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="btn_magacin" minHeight="150.0" minWidth="150.0" mnemonicParsing="false" onAction="#openMagacin" styleClass="btn_magacin_bg" stylesheets="@slike.css" />
+            <Label text="Magacin">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
