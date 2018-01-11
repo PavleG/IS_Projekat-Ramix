@@ -1,0 +1,3 @@
+13,10.01.2018.,StringProperty [value: MIXACRIL podloga],StringProperty [value: 50]
+13,10.01.2018.,StringProperty [value: BOJAPOL EKONOMIK poludisperziona boja za enterijer],StringProperty [value: 43]
+13,10.01.2018.,StringProperty [value: BOJAFAS disperziona fasadna boja za exterijer],StringProperty [value: 60]
