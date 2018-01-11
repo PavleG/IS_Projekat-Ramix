@@ -1,0 +1,7 @@
+1,10.01.2018.,MIXACRIL podloga,50
+1,10.01.2018.,BOJAPOL EKONOMIK poludisperziona boja za enterijer,43
+1,10.01.2018.,BOJAFAS disperziona fasadna boja za exterijer,60
+2,10.01.2018.,MIXCOL D2 disperzioni univerzalni lepak za tvrdo drvo,50
+2,10.01.2018.,BOJAPOL EKONOMIK poludisperziona boja za enterijer,56
+3,10.01.2018.,MIXTON vec pripremljena disperziona boja u raznim nijansama,100
+3,10.01.2018.,MIXACRIL KONCENTRAT podloga,29

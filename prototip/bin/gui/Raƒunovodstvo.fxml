@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Ulazne fakture">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <TableView prefHeight="451.0" prefWidth="505.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="Šifra" />
+                      <TableColumn prefWidth="99.0" text="Br. računa" />
+                        <TableColumn prefWidth="75.0" text="Dobavljač" />
+                        <TableColumn prefWidth="75.0" text="Uslovi" />
+                        <TableColumn prefWidth="75.0" text="Rok" />
+                        <TableColumn prefWidth="75.0" text="Iznos" />
+                    </columns>
+                  </TableView>
+                  <VBox alignment="TOP_CENTER" prefHeight="351.0" prefWidth="164.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Dodaj račun" />
+                        <Button disable="true" mnemonicParsing="false" text="Označi kao plaćen" />
+                        <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Detalji" />
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="249.0" prefWidth="164.0" spacing="10.0">
+                           <children>
+                              <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="112.0" selected="true" text="Neplaćeni računi">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="gr" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="113.0" text="Svi računi" toggleGroup="$gr" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </content>
+    </Tab>
+    <Tab text="Izlazne fakture">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <TableView prefHeight="451.0" prefWidth="505.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="Šifra" />
+                        <TableColumn prefWidth="75.0" text="Kupac" />
+                        <TableColumn prefWidth="75.0" text="Cena" />
+                        <TableColumn prefWidth="75.0" text="Rok" />
+                        <TableColumn prefWidth="75.0" text="Uslovi" />
+                     </columns>
+                  </TableView>
+                  <VBox alignment="TOP_CENTER" prefHeight="351.0" prefWidth="164.0" spacing="20.0">
+                     <children>
+                        <Button disable="true" mnemonicParsing="false" text="Označi kao plaćen" />
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="249.0" prefWidth="164.0" spacing="10.0">
+                           <children>
+                              <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="112.0" selected="true" text="Neplaćeni računi">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="gr1" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="113.0" text="Svi računi" toggleGroup="$gr1" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+    </Tab>
+  </tabs>
+</TabPane>

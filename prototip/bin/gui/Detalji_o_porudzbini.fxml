@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="232.0" prefWidth="404.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DetaljiKontroler">
+   <children>
+      <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="332.0" text="Detalji o porudžbini:" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="detalji" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+   </padding>
+</VBox>

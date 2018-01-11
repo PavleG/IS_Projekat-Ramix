@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="376.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="39.0" prefWidth="580.0" spacing="50.0">
+         <children>
+            <HBox prefHeight="39.0" prefWidth="279.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="111.0" text="Šifra proizvoda:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField prefHeight="25.0" prefWidth="68.0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="366.0">
+         <children>
+            <Label text="Napomena: polja označena zvezdicom su obavezna">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER_RIGHT" prefHeight="250.0" prefWidth="118.0" spacing="10.0">
+               <children>
+                  <Label text="Naziv*:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="Cena*:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="Pakovanje*:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="Količina*:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="340.0" prefWidth="203.0" spacing="10.0" HBox.hgrow="NEVER">
+               <children>
+                  <TextField VBox.vgrow="NEVER" />
+                  <TextField VBox.vgrow="NEVER" />
+                  <TextField VBox.vgrow="NEVER" />
+                  <TextField />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" text="Potvrdi unos">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="Odustani">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="10.0" top="10.0" />
+   </padding>
+</VBox>

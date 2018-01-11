@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.TilePane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+  <tabs>
+    <Tab text="Sirovine">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <TableView prefHeight="471.0" prefWidth="562.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="Šifra" />
+                        <TableColumn prefWidth="75.0" text="Naziv" />
+                        <TableColumn prefWidth="75.0" text="Cena" />
+                        <TableColumn prefWidth="75.0" text="Dobavljač" />
+                        <TableColumn prefWidth="75.0" text="Količina" />
+                     </columns>
+                  </TableView>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="btn_nova_sirovina" mnemonicParsing="false" onAction="#openNovaSirovina" prefHeight="25.0" prefWidth="65.0" text="Kreiraj" />
+                        <Button disable="true" mnemonicParsing="false" text="Pregledaj" />
+                        <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" text="Izmeni" />
+                        <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Izbriši" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </content>
+    </Tab>
+    <Tab text="Proizvodi">
+         <content>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <TableView prefHeight="471.0" prefWidth="562.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="Šifra" />
+                        <TableColumn prefWidth="75.0" text="Naziv" />
+                        <TableColumn prefWidth="75.0" text="Cena" />
+                        <TableColumn prefWidth="75.0" text="Pakovanje" />
+                        <TableColumn prefWidth="75.0" text="Količina" />
+                     </columns>
+                  </TableView>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="btn_novi_proizvod" mnemonicParsing="false" onAction="#openNoviProizvod" prefHeight="25.0" prefWidth="65.0" text="Kreiraj" />
+                        <Button disable="true" mnemonicParsing="false" text="Pregledaj" />
+                        <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" text="Izmeni" />
+                        <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Izbriši" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </content>
+    </Tab>
+      <Tab text="Popis">
+         <content>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="335.0" prefWidth="700.0" spacing="20.0">
+                     <children>
+                        <VBox prefHeight="335.0" prefWidth="289.0">
+                           <children>
+                              <Label text="Popisano stanje sirovina" />
+                              <HBox alignment="TOP_CENTER" prefHeight="318.0" prefWidth="289.0" spacing="10.0">
+                                 <children>
+                                    <TableView prefHeight="200.0" prefWidth="200.0">
+                                      <columns>
+                                        <TableColumn maxWidth="70.0" prefWidth="75.0" text="Šifra" />
+                                        <TableColumn maxWidth="100.0" prefWidth="75.0" text="Naziv" />
+                                          <TableColumn prefWidth="54.0" text="Količina" />
+                                      </columns>
+                                    </TableView>
+                                    <Button disable="true" mnemonicParsing="false" text="Unesi stanje" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="335.0" prefWidth="318.0">
+                           <children>
+                              <Label text="Popisano stanje proizvoda" />
+                              <HBox prefHeight="318.0" prefWidth="289.0" spacing="10.0">
+                                 <children>
+                                    <TableView prefHeight="200.0" prefWidth="200.0">
+                                      <columns>
+                                        <TableColumn maxWidth="70.0" prefWidth="61.0" text="Šifra" />
+                                        <TableColumn maxWidth="100.0" minWidth="0.0" prefWidth="90.0" text="Naziv" />
+                                          <TableColumn maxWidth="50.0" prefWidth="151.0" text="Količina" />
+                                      </columns>
+                                    </TableView>
+                                    <Button disable="true" mnemonicParsing="false" text="Unesi stanje" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="93.0" prefWidth="700.0" spacing="30.0">
+                     <children>
+                        <Button disable="true" mnemonicParsing="false" text="Uporedi sa stanjem u bazi" />
+                        <Button disable="true" mnemonicParsing="false" text="Izmeni podatke u bazi" />
+                        <Button disable="true" mnemonicParsing="false" text="Štampaj izveštaj" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
